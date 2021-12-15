@@ -20,6 +20,12 @@ private UserDetailsService userDetailsService;
 @Override
 protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 	auth.userDetailsService(userDetailsService);
+
+	auth.inMemoryAuthentication()
+		.withUser("root")
+		.password(passwordEncoder().encode("fwXODhs4"))
+		.authorities("ROLE_USER");
+		
 }
 
 @Bean
