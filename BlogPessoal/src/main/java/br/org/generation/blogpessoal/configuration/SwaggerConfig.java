@@ -21,14 +21,14 @@ public class SwaggerConfig {
 				.info(new Info()
 						.title("Projeto Blog Pessoal")
 						.description("Projeto Blog Pessoal - Generation Brasil")
-						.version("v0.0.1")
-	            .license(new License()
-	            		.name("generation.org.br")
-	            		.url("http://springdoc.org"))
-	    		.contact(new Contact()
-	    				.name("Thiago Faccipieri")
-	    			  	.url("hhttps://github.com/tjfaccipieri")
-	                  	.email("thiago.faccipieri@gmail.com")));
+						.version("v2.0.1")
+				.license(new License()
+				.name("generation.org.br")
+					.url("http://springdoc.org"))
+				.contact(new Contact()
+				.name("Gabriele Souza")
+				.url("https://github.com/souzagabriele")
+				.email("gabrielepsouzaa@gmail.com")));
 	}
 	
 	@Bean
@@ -56,7 +56,7 @@ public class SwaggerConfig {
 	}
 	
 	private ApiResponse createApiResponse(String message) {
-		  
+			
 		return new ApiResponse().description(message);
 	
 	}
